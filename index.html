@@ -1918,9 +1918,11 @@ function updateStudentListResults(){
 
 const STUDENT_DETAIL_GROUPS = [
   {
-    name: '스피치 관련',
+    // 과목(스피치/면접)과 상관없이 모든 학생에게 항상 맨 위에 보여요.
+    name: '기본 정보',
     fields: [
       { key: 'age', label: '나이', type: 'text', placeholder: '예: 27' },
+      { key: 'contact', label: '연락처', type: 'tel', placeholder: '예: 010-1234-5678' },
     ]
   },
   {
@@ -1940,6 +1942,7 @@ const STUDENT_DETAIL_GROUPS = [
       { key: 'lectureNeeds', label: '강의니즈', type: 'textarea' },
       { key: 'specialNotes', label: '특이사항', type: 'textarea' },
       { key: 'paymentInfo', label: '결제 및 입학원서', type: 'textarea' },
+      { key: 'fullSchedule', label: '전체 수업 시간표', type: 'textarea' },
     ]
   },
 ];
